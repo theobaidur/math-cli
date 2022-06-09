@@ -7,13 +7,13 @@ const originalExpression = args.join(" ");
 const doMath = (expression: string) => {
   try {
     // replace all x or X with *
-    let expressionParsed = expression.replace(/x/g, "*");
+    let expressionParsed = expression.replace(/x/gi, "*");
     // replace all % with Mod
     expressionParsed = expressionParsed.replace(/%/g, "Mod");
     const result = math.eval(expressionParsed);
     console.log(`${expression} = ${result}`);
   } catch (e: any) {
-    console.log("Invalid expression: " + expression);
+    console.log(`${expression} = Invalid Expression (${e.message})`);
   }
 };
 

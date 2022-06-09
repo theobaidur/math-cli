@@ -1,6 +1,6 @@
 {
   "name": "@theobaidur/math-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Small javascript utility to do maths from cli",
   "keywords": [
     "math",

@@ -8,18 +8,21 @@ Install the package globally, simply by running `npm install -g @theobaidur/math
 
 Once installed,
 
-- type `math YOUR-EXPRESSION` and press enter to see the result.
+- type `math '<YOUR-EXPRESSION>'` and press enter to see the result.
 - type `math --version` or `math -v` to check current version
 - type `math --help` or `math -h` to get more info
 
 Examples:
 
 ```
-math 10+2
+math 10+2 // simple expression, we can skip single/double quote
 // 10+2 = 12
 
-math sin90
+math sin90 // simple expression, we can skip single/double quote
 // sin90 = 1
+
+math "10+sin90+(4*2)" // complex expression, we need single/double quote
+// 10+sin90+(4*2) = 19
 
 math --version
 // @theobaidur/math-cli v1.0.1
