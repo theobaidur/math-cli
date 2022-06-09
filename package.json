@@ -1,8 +1,15 @@
 {
   "name": "@theobaidur/math-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small javascript utility to do maths from cli",
+  "keywords": [
+    "math",
+    "cli",
+    "javascript",
+    "calculator"
+  ],
   "license": "MIT",
+  "homepage": "https://github.com/theobaidur/math-cli",
   "repository": {
     "type": "git",
     "url": "https://github.com/theobaidur/math-cli"
@@ -15,7 +22,6 @@
     "install:local": "npm run build && npm install .",
     "math": "node dist/math.js",
     "deploy": "npm run build && npm publish --access public"
-
   },
   "bin": {
     "math": "./dist/math.js"
