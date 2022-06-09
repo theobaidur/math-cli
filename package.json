@@ -1,0 +1,30 @@
+{
+  "name": "@theobaidur/math-cli",
+  "version": "1.0.0",
+  "description": "Small javascript utility to do maths from cli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theobaidur/math-cli"
+  },
+  "main": "dist/math.js",
+  "scripts": {
+    "clear": "rimraf dist",
+    "watch": "npm run clear && tsc -w",
+    "build": "npm run clear && tsc",
+    "install:local": "npm run build && npm install",
+    "math": "node dist/math.js"
+  },
+  "bin": {
+    "math": "./dist/math.js"
+  },
+  "dependencies": {
+    "math-expression-evaluator": "^1.3.14"
+  },
+  "devDependencies": {
+    "@types/math-expression-evaluator": "^1.2.2",
+    "@types/node": "^17.0.41",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.3"
+  }
+}
