@@ -12,8 +12,10 @@
     "clear": "rimraf dist",
     "watch": "npm run clear && tsc -w",
     "build": "npm run clear && tsc",
-    "install:local": "npm run build && npm install",
-    "math": "node dist/math.js"
+    "install:local": "npm run build && npm install .",
+    "math": "node dist/math.js",
+    "deploy": "npm run build && npm publish --access public"
+
   },
   "bin": {
     "math": "./dist/math.js"
